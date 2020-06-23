@@ -1,6 +1,7 @@
 import Vue from 'vue'
 import VueRouter from 'vue-router'
 import Home from '../views/Home.vue'
+import Composition from '../views/Composition.vue'
 
 Vue.use(VueRouter)
   const routes = [
@@ -8,6 +9,11 @@ Vue.use(VueRouter)
     path: '/',
     name: 'Home',
     component: Home
+  },
+  {
+    path: '/composition-projects',
+    name: 'Composition',
+    component: Composition
   }
 ]
 
