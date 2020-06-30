@@ -1,7 +1,7 @@
 <template>
     <div class="bg-orange-100">
         <div class="flex flex-col items-center text-center py-20 gap-5">
-            <span class="text-6xl uppercase font-bold tracking-widest">Fabrication Process</span>
+            <span id="header" class="text-6xl uppercase font-bold tracking-widest">Fabrication Process</span>
             <p class="max-w-3xl">First, I start out with new, never-filled propane tanks and draw a line on the top and bottom. These will be the lines I follow for when I cut out the center section of the tanks.</p>
             <img class="object-scale-down max-w-lg h-auto" src="..\assets\tankProcess\20180206_161828.jpg" alt="">
             <p>I then remove the handles and valves.</p>

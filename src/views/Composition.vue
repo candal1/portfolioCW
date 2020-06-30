@@ -1,11 +1,11 @@
 <template>
     <div class="bg-orange-100">
         <div class="flex flex-col items-center py-20 px-16 gap-20">
-            <span class="font-bold text-5xl tracking-widest uppercase">Composition Projects</span>
+            <span id="header" class="font-bold text-5xl tracking-widest uppercase">Composition Projects</span>
             <div>
-                <span class="text-3xl italic">Picasso at the Lapin<br>Agile</span>
-                <span class="text-2xl italic"> <br>by Steve Martin</span><br>
-                <span class="text-xl leading-loose">Composers: Chris Wilson, Drew Stockero</span>
+                <span id="headerItalic" class="text-4xl italic">Picasso at the Lapin<br>Agile</span>
+                <span id="headerItalic" class="text-2xl italic"> <br>by Steve Martin</span><br>
+                <span id="" class="text-2xl leading-loose">Composers: Chris Wilson, Drew Stockero</span>
             </div>
             <div class="md:inline-flex">
                 <img class="object-scale-down max-w-lg h-auto" src="../assets/comp_1.jpg" alt="picasso stage view">

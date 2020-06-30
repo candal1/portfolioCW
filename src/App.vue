@@ -26,3 +26,24 @@ export default {
  }
 }
 </script>
+
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@800&family=Playfair+Display:ital,wght@1,400;1,600&family=Roboto:wght@300&display=swap');
+
+#header {
+  letter-spacing: 0.15rem;
+  font-family: 'Montserrat', sans-serif;
+}
+
+#headerItalic {
+  font-weight: 600;
+  letter-spacing: 0.15rem;
+  font-family: 'Playfair Display', serif;
+}
+
+p {
+  font-size: 0.9rem;
+  letter-spacing: 0.05rem;
+  font-family: 'Roboto', sans-serif;
+}
+</style>

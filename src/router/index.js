@@ -12,52 +12,89 @@ import LiveSound from '../views/LiveSound.vue'
 import SoundForVideo from '../views/SoundForVideo.vue'
 
 Vue.use(VueRouter)
-  const routes = [
+
+const routes = [
   {
     path: '/',
     name: 'Home',
-    component: Home
+    component: Home,
+    meta: {
+      title: 'Home | Chris Wilson'
+    }
   },
   {
     path: '/recordings',
-    component: Recordings
+    component: Recordings,
+    meta: {
+      title: 'Recordings | Chris Wilson'
+    }
   },
   {
     path: '/live-sound',
-    component: LiveSound
+    component: LiveSound,
+    meta: {
+      title: 'Live Sound | Chris Wilson'
+    }
   },
   {
     path: '/sound-for-video',
-    component: SoundForVideo
+    component: SoundForVideo,
+    meta: {
+      title: 'Sound for Video | Chris Wilson'
+    }
   },
   {
     path: '/composition-projects',
-    component: Composition
+    component: Composition,
+    meta: {
+      title: 'Composition Projects | Chris Wilson'
+    }
   },
   {
     path: '/tank-drums',
-    component: TankDrums
+    component: TankDrums,
+    meta: {
+      title: 'Tank Drums | Chris Wilson'
+    }
   },
   {
     path: '/fabrication-process',
-    component: FabProcess
+    component: FabProcess,
+    meta: {
+      title: 'Fabrication Process | Chris Wilson'
+    }
   },
   {
     path: '/experience',
-    component: Experience
+    component: Experience,
+    meta: {
+      title: 'Experience | Chris Wilson'
+    }
   },
   {
     path: '/contact',
-    component: Contact
+    component: Contact, 
+    meta: {
+      title: 'Contact | Chris Wilson'
+    }
   },
   {
     path: '/resume',
-    component: Resume
+    component: Resume,
+    meta: {
+      title: 'Resume | Chris Wilson'
+    }
   }
-]
+];
 
 const router = new VueRouter({
   routes
+})
+
+// Set document title based off of current route
+router.beforeEach((to, from, next) => {
+    document.title = to.meta.title;
+    next();
 })
 
 export default router
