@@ -10,6 +10,7 @@ import Resume from '../views/Resume.vue'
 import Recordings from '../views/Recordings.vue'
 import LiveSound from '../views/LiveSound.vue'
 import SoundForVideo from '../views/SoundForVideo.vue'
+import Album from '../views/Album.vue'
 
 Vue.use(VueRouter)
 
@@ -20,6 +21,13 @@ const routes = [
     component: Home,
     meta: {
       title: 'Home | Chris Wilson'
+    }
+  },
+  {
+    path: '/album',
+    component: Album,
+    meta: {
+      title: 'Album | Chris Wilson'
     }
   },
   {
@@ -88,7 +96,15 @@ const routes = [
 ];
 
 const router = new VueRouter({
-  routes
+  routes,
+  // eslint-disable-next-line no-unused-vars
+  scrollBehavior (to, from, savedPosition) {
+    if (to.hash) {
+      return {
+        selector: to.hash
+        // , offset: { x: 0, y: 10 }
+      }
+    }  }
 })
 
 // Set document title based off of current route
