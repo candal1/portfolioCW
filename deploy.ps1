@@ -3,4 +3,4 @@
 git add -A
 git commit -m 'deploy script'
 
-git push origin master
+git push https://github.com/candaII/portfolioCW.git master
